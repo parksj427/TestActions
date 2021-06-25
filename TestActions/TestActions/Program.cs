@@ -9,8 +9,9 @@ namespace TestAction1
     {
         static void Main(string[] args)
         {
+            //TODO : HelloWorld
             Console.WriteLine("Hello World!");
-            Console.ReadLine("q");
+            Console.ReadLine();
         }
     }
 }
