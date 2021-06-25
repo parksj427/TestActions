@@ -21,5 +21,5 @@ jobs:
     #  run: dotnet restore TestActions
     - name: Build
       run: dotnet build TestActions --no-restore
-    #- name: Test
-    #  run: dotnet test TesetActions --no-build --verbosity normal
+    - name: Test
+      run: dotnet test TestActions --no-build --verbosity normal
