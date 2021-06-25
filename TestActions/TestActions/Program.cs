@@ -11,6 +11,7 @@ namespace TestAction1
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            throw new Exception("ERROR!!!!!!!!");
         }
     }
 }
