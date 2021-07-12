@@ -25,8 +25,8 @@ jobs:
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
 
-      - name: Restore Packages
-        run: nuget restore TestActions.sln
+      #- name: Restore Packages
+      #  run: nuget restore TestActions.sln
 
       - name: Build Solution
         run: |
