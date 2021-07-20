@@ -12,7 +12,6 @@ namespace TestAction1
             //TODO : HelloWorld
             Console.WriteLine("Hello World!");
             Console.ReadLine("");
-            Console.ReadLine();
         }
     }
 }
