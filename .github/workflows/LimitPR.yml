@@ -1,6 +1,6 @@
-;  MIT License
-;  Copyright (c) 2020 Lukas
-;  https://github.com/LukBukkit/action-pr-limits
+#  MIT License
+#  Copyright (c) 2020 Lukas
+#  https://github.com/LukBukkit/action-pr-limits
 
 name: Limit PRs
 
