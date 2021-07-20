@@ -17,4 +17,4 @@ jobs:
         with:
           allowlist: |
             develop
-            hotfix-().{1}
+            hotfix-*
