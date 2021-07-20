@@ -10,7 +10,7 @@ namespace TestAction1
         static void Main(string[] args)
         {
             //TODO : HelloWorld
-            Console.WriteLine("Hello World!~!@1");
+            Console.WriteLine("Hello World!");
             Console.ReadLine();
         }
     }
