@@ -4,12 +4,15 @@ on:
   push:
     branches: [ main ]
   pull_request:
+    types: [opened, synchronize, reopened, closed]
     branches: [ main ]
 
 jobs:
   build:
-#runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    #runs-on: ubuntu-latest
     runs-on: windows-latest
+    #runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v2
@@ -21,5 +24,5 @@ jobs:
     #  run: dotnet restore TestActions
     - name: Build
       run: dotnet build TestActions --no-restore
-    #- name: Test
-    #  run: dotnet test TesetActions --no-build --verbosity normal
+    - name: Test
+      run: dotnet test TestActions --no-build --verbosity normal
