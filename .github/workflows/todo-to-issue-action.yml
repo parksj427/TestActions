@@ -1,7 +1,7 @@
 name: "Workflow"
-on: 
-    push:
-      branches: [ develop ]
+on:   
+  push:
+    branches: [ develop ]
 jobs:
   build:
     runs-on: "ubuntu-latest"
@@ -11,4 +11,4 @@ jobs:
         uses: "alstr/todo-to-issue-action@v4.0.2"
         id: "todo"
         with:
-          TOKEN: ${{ secrets.TEST }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
