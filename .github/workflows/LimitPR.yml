@@ -18,4 +18,4 @@ jobs:
         with:
           allowlist: |
             develop
-            hotfix-*
+            /hotfix-{1}/g
